@@ -10,14 +10,16 @@ export const MovieCard: React.FC<MovieCardProps> = ({ item }) => {
     setshowModal(!showModal);
   }
   return (
-    <div className="movieCard-wrap">
-      <div className="movieCardImage-wrap"  >
-        <img onClick={() => { setshowModal(true); }} className="movieCardImage" src={`${imageUrl}${item.poster_path}`} alt="" />
+    <>
+      <div className="movieCard-wrap">
+        <div className="movieCardImage-wrap"  >
+          <img onClick={() => { setshowModal(true); }} className="movieCardImage" src={`${imageUrl}${item.poster_path}`} alt="" />
+        </div>
+        <div className="modalWrap">
+          {showModal ? <DescriptionModal showModal={showModal} handleShowModal={handleShowModal} movieId={item.id} /> : null}
+        </div>
       </div>
-      <div className="modalWrap">
-        {showModal ? <DescriptionModal showModal={showModal} handleShowModal={handleShowModal} movieId={item.id} /> : null}
-      </div>
-    </div>
+    </>
   );
 }
 
