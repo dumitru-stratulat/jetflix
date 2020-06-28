@@ -1,38 +1,39 @@
-.App {
-  text-align: center;
+body {
+  background-color: black;
+}
+.item {
+  width: 100px;
+}
+.listTitle {
+  color: aliceblue;
+  margin-left: 3%;
+}
+.carousel {
+  padding-left: 3%;
+}
+.modal p {
+  width: 100px;
+  height: 100px;
+}
+hr {
+  height: 1px;
+  color: #123455;
+  background-color: #123455;
+  border: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.react-multiple-carousel__arrow {
+  background-color: rgba(105, 105, 105, 0.2) !important;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.react-multiple-carousel__arrow--left {
+  margin-left: -3% !important;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.react-multiple-carousel__arrow--right {
+  margin-right: -3% !important;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.movieCardImage {
+  width: 150px;
+  height: 200px;
+  -webkit-user-drag: none;
+  border: 1px solid rgba(248, 147, 6, 0.459);
 }
